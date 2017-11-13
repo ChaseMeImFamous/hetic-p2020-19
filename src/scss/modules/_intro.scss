@@ -1,0 +1,27 @@
+.intro__content {
+  position: relative;
+  display: flex;
+  flex-direction : row;
+  align-items: center;
+  background-color: $background__main;
+}
+
+.intro__contentTitle{
+  color: $color__main;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: $fontsize__main;
+  opacity: 0.03;
+}
+
+.intro__contentImage {
+  z-index: 10;
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+}

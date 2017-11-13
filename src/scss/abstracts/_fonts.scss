@@ -1,12 +1,13 @@
 @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
   @font-face {
     font-family: $font-family;
-      src: url('dist/fonts/#{$file-path}.woff2');
-      src: url('dist/fonts/#{$file-path}.woff') format('woff'),
-           url('dist/fonts/#{$file-path}.ttf') format('truetype');
+    src: url("dist/fonts/#{$file-path}.woff2");
+    src: url("dist/fonts/#{$file-path}.woff") format('woff'), url("dist/fonts/#{$file-path}.otf") format('truetype');
     font-weight: $font-weight;
     font-style: $font-style;
   }
 }
+
+$fontsize__main: 18vw;
 
 // supprimer format ttf?
