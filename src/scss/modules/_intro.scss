@@ -1,3 +1,7 @@
+.intro_section {
+  display: flex;
+}
+
 .intro__content {
   position: relative;
   display: flex;
@@ -20,28 +24,38 @@
   font-weight: 600;
   position: absolute;
   left: 50%;
-  top: 12vw;
+  top: 18vw;
   transform: translate(-50%, -50%);
-  font-size: $fontsize__second;
+  font-size: $fs_introTitle2;
+  @include large {
+    top: 12vw;
+		font-size: $fs_introTitle2--large;
+	}
   white-space:pre;
 }
 
 .intro__contentTitle {
-  color: $color__main;
+  color: $color__fontTitle2;
   font-family: 'Maison Neue', sans-serif;
   font-weight: 600;
   position: absolute;
   left: 50%;
-  top: 25vw;
+  top: calc(50% + 4vw);
   text-align: center;
   transform: translate(-50%, -50%);
-  font-size: $fontsize__main;
-  opacity: 0.02;
+  font-size: $fs_introTitle;
+  @include large {
+		font-size: $fs_introTitle--large;
+	}
+  opacity: 0.1;
   white-space:pre;
 }
 
 .intro__contentVideo {
-  width: 50vw;
+  width: 70vw;
+  @include large {
+		width: 45vw;
+	}
   height: auto;
   z-index: 10;
   margin: 0 auto;
@@ -55,7 +69,10 @@
   top: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-  width: 60vw;
+  width: 80vw;
+  @include large {
+		width: 55vw;
+	}
   height: auto;
   z-index: 9;
   margin: 0 auto;

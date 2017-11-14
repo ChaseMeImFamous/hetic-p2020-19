@@ -2,13 +2,16 @@
   @font-face {
     font-family: $font-family;
     src: url("dist/fonts/#{$file-path}.woff2");
-    src: url("dist/fonts/#{$file-path}.woff") format('woff'), url("dist/fonts/#{$file-path}.otf") format('truetype');
+    src: url("dist/fonts/#{$file-path}.woff") format('woff'), url("dist/fonts/#{$file-path}.ttf") format('truetype');
     font-weight: $font-weight;
     font-style: $font-style;
   }
 }
 
-$fontsize__main: 18vw;
-$fontsize__second: 12vw;
+$fs_introTitle: 20vw;
+$fs_introTitle2: 17vw;
+
+$fs_introTitle--large: 18vw;
+$fs_introTitle2--large: 12vw;
 
 // supprimer format ttf?

@@ -1,0 +1,11 @@
+.first_section {
+  display: flex;
+}
+
+.first__content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: $background__main;
+}
