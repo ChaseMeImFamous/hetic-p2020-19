@@ -2,5 +2,5 @@ import { User } from './user';
 
 console.log('Welcome !');
 
-let name = 'Bastien';
+let name = 'Kévin';
 const user = new User(name);

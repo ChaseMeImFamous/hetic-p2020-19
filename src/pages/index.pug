@@ -2,13 +2,20 @@ include ../partials/header.pug
 
 section(class="intro__section")
   div(class="intro__header")
-    div(class="intro__headerContent")
-      p(class="intro__headerContentText")
+    p(class="intro__headerTitle") Leica M10
   div(class="intro__content")
-    p(style='white-space:pre;' class="intro__contentTitle") Leica M10
-    //- video(class="intro__contentVideo" src="./video/intro__videoIntro.mp4")
-    img(class="intro__contentImage" src="./img/intro__leicaM10.png")
+    p(class="intro__contentTitle") Leica M10
+    video(class="intro__contentVideo" poster="img/intro__leicaM10.png" muted="muted" src="./video/intro__videoIntro.mp4")
+    img(class="intro__contentImage" src="img/intro__shadow.png")
   div(class="intro__footer")
     div(class="intro__fonterContent")
+      
+section(class="first__section")
+  div(class="first__header")
+    div(class="first__headerContent")
+  div(class="first__content")
+    p(style='white-space:pre;' class="first__contentTitle") 
+  div(class="first__footer")
+    div(class="first__fonterContent")
 
 include ../partials/footer.pug

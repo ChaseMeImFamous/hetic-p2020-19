@@ -87,6 +87,15 @@ function fonts() {
 }
 
 /**
+ * VIDEOS
+ */
+
+function video() {
+  return gulp.src('src/video/**/*')
+    .pipe(gulp.dest('dist/video'));
+}
+
+/**
  * GLOBAL
  */
 
@@ -94,9 +103,9 @@ function clean() {
   return del(['dist']);
 }
 
-gulp.task('build', gulp.series(clean, gulp.parallel(templates, scss, js, images, fonts)));
+gulp.task('build', gulp.series(clean, gulp.parallel(templates, scss, js, images, fonts, video)));
 
-gulp.task('default', gulp.parallel(templates, scss, js, images, fonts, function(done) {
+gulp.task('default', gulp.parallel(templates, scss, js, images, fonts, video, function(done) {
   sync.init({
     server: {
       baseDir: './dist'
