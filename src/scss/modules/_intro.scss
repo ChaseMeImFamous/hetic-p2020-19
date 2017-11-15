@@ -1,20 +1,10 @@
-.intro_section {
+.intro__section {
   display: flex;
+  flex-flow: column wrap;
 }
-
-.intro__content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: $background__main;
-}
-
+/* INTRO HEADER */
 .intro_header {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  position: reative;
 }
 
 .intro__headerTitle {
@@ -22,16 +12,26 @@
   color: $color__fontTitle2;
   font-family: 'Maison Neue', sans-serif;
   font-weight: 600;
+  font-size: $fs_introTitle2;
+  @include large {
+    font-size: $fs_introTitle2--large;
+    top: 12vw;
+  }
   position: absolute;
   left: 50%;
   top: 18vw;
+  text-align: center;
   transform: translate(-50%, -50%);
-  font-size: $fs_introTitle2;
-  @include large {
-    top: 12vw;
-		font-size: $fs_introTitle2--large;
-	}
-  white-space:pre;
+  white-space: pre;
+}
+/* INTRO CONTENT */
+.intro__content {
+  position: relative;
+  display: flex;
+  flex-direction: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $background__main;
 }
 
 .intro__contentTitle {
@@ -45,35 +45,96 @@
   transform: translate(-50%, -50%);
   font-size: $fs_introTitle;
   @include large {
-		font-size: $fs_introTitle--large;
-	}
+    font-size: $fs_introTitle--large;
+  }
   opacity: 0.1;
-  white-space:pre;
+  white-space: pre;
 }
 
 .intro__contentVideo {
   width: 70vw;
-  @include large {
-		width: 45vw;
-	}
   height: auto;
+  @include large {
+    width: 45vw;
+  }
   z-index: 10;
-  margin: 0 auto;
   background-position: center center;
   background-size: contain;
 }
 
 .intro__contentImage {
   position: absolute;
+  display: none;
   left: 50%;
   top: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
   width: 80vw;
   @include large {
-		width: 55vw;
-	}
+    display: block;
+    width: 55vw;
+  }
   height: auto;
   z-index: 9;
   margin: 0 auto;
+}
+/* INTRO FOOTER */
+.intro__footer {
+  z-index: 11;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: relative;
+  top: -8vw;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 600;
+  font-size: $fs_introText;
+  @include large {
+    font-size: $fs_introText--large;
+  }
+}
+
+.intro__footerText {
+  color: $color__fontTitle2;
+  flex: 1 0 50%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.intro__footerText > div{
+  flex: 1 0 0;
+}
+
+.intro__footerTextBlack {
+  position: relative;
+  padding-left: 3vw;
+  @include large {
+    padding-left: 1.5vw;
+  }
+}
+
+.intro__footerTextBlack:before {
+  content:'';
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 14vw;
+  background:$line__color;
+  width: 0.5vw;
+  border-radius: 2vw;
+  @include large {
+    width: 0.2vw;
+    left: 21vw;
+  }
+}
+
+.intro__footerTextWhite {
+  color: $color__main;
+  opacity: 0.5;
+}
+
+.intro__footerTextEnd > div {
+  align-self: flex-end;
+  margin-right: 5vw;
 }
