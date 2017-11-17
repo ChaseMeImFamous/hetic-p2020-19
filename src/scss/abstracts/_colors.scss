@@ -2,3 +2,10 @@ $background__main: #161616;
 $color__main: #FFFFFF;
 $color__fontTitle2: #3C3939;
 $line__color: #E30610;
+
+// Colors
+$rougeLeica : #E30610;
+$lowOpacity_rougeLeica : transparentize($rougeLeica, 0.5);
+$black : #161616;
+$darkGrey : #4D4A4A;
+$grey : #646464;

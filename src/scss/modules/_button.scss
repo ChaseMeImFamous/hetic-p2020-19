@@ -1,0 +1,18 @@
+.button {
+  background-color: $rougeLeica;
+  width: 25%;
+  height: 33px;
+  font-family: 'Maison Neue', sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  text-decoration: none;
+  z-index: 999999;
+    p {
+      margin-bottom: 1px;
+    }
+}
