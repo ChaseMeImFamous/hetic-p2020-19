@@ -1,9 +1,11 @@
 .intro__section {
   display: flex;
   flex-flow: column wrap;
+  margin-bottom: 25vw;
+  background-color: $background__main;
 }
 /* INTRO HEADER */
-.intro_header {
+.intro__header {
   position: reative;
 }
 
@@ -81,60 +83,69 @@
 /* INTRO FOOTER */
 .intro__footer {
   z-index: 11;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   position: relative;
-  top: -8vw;
-  font-family: 'Maison Neue', sans-serif;
-  font-weight: 600;
-  font-size: $fs_introText;
-  @include large {
+  top: -3vw;
+  margin-bottom: 45vw;
+  @include large{
+    margin-bottom: -10vw;
     font-size: $fs_introText--large;
   }
-}
-
-.intro__footerText {
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 600;
+  font-size: $fs_introText+1vw;
   color: $color__fontTitle2;
-  flex: 1 0 50%;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
 }
 
-.intro__footerText > div{
-  flex: 1 0 0;
+.intro__footerCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
-.intro__footerTextBlack {
-  position: relative;
-  padding-left: 3vw;
+.intro__footerCenterTextBlack {
+  margin-right : 5vw;
   @include large {
-    padding-left: 1.5vw;
+    margin-right: 7vw;
   }
+  display: inline-block;
 }
 
-.intro__footerTextBlack:before {
-  content:'';
-  position:absolute;
+.intro__footerCenterTextBlack > div:nth-of-type(1) {
+  position: relative;
+}
+
+.intro__footerCenterTextBlack > div:nth-of-type(1):before {
+  content: '';
+  position: absolute;
   top: 0;
   bottom: 0;
-  left: 14vw;
-  background:$line__color;
-  width: 0.5vw;
-  border-radius: 2vw;
+  left: -5vw;
+  background: $line__color;
+  width: 1vw;
+  border-radius: 4vw;
   @include large {
-    width: 0.2vw;
-    left: 21vw;
+    width: 0.3vw;
+    left: -2vw;
   }
 }
 
-.intro__footerTextWhite {
+.intro__footerCenterTextWhite {
+  display: inline-block;
   color: $color__main;
   opacity: 0.5;
 }
 
-.intro__footerTextEnd > div {
-  align-self: flex-end;
-  margin-right: 5vw;
+.intro__footerRightText {
+  position: absolute;
+  top: 20vw;
+  right: 5vw;
+  opacity: 0.5;
+  @include large {
+    position: absolute;
+    right: 10.5vw;
+    top: calc(50% - 3vw);
+    transform: translate(-50%, -50%);
+  }
 }

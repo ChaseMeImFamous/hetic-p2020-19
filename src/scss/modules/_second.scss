@@ -1,26 +1,16 @@
-.first__section {
+.second__section {
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  background-color: $background__main;
-  @include large {
-    padding: 0 0 0 8vw;
-  }
-}
-
-.first__content{
-  flex: 1 0 40%;
-  padding-left: 8vw;
-  padding-right: 8vw;
-  @include large {
-    padding-left: 0;
-    padding-right: 13.4vw;
-  }
-}
-
-.first__title {
-  position: relative;
+  padding-left: 10vw;
+  background-color: $background__second;
   color: $color__main;
+  @include large {
+      padding: 0 0 0 8vw;
+    }
+}
+.second__title {
+  position: relative;
   font-family: 'Maison Neue', sans-serif;
   font-weight: 600;
   font-size: $fs_firstTitle;
@@ -34,13 +24,13 @@
   }
 }
 
-.first__title:before {
+.second__title:before {
   content: '';
   position: absolute;
   left: 0;
   right: 65%;
   top: -8vw;
-  background: $line__color;
+  background-color: $color__main;
   height: 2vw;
   border-radius: 2vw;
   @include large {
@@ -51,8 +41,7 @@
   }
 }
 
-.first__text {
-  color: $color__main;
+.second__text {
   font-family: 'Maison Neue', sans-serif;
   font-weight: 400;
   font-size: $fs_firstText;
@@ -63,13 +52,6 @@
   }
 }
 
-.first__image{
+.second__image{
   width: 100%;
-  padding-right: 3vw;
-  margin-top: 25vw;
-  @include large {
-    width: 90%;
-    padding-right: 0;
-    margin-top: -3.1vw;
-  }
 }

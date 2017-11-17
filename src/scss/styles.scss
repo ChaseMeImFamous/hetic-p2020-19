@@ -7,8 +7,9 @@
 @import 'abstracts/mixins';
 @import 'abstracts/animations';
 
-@import 'blocs/header';
-@import 'blocs/footer';
+@import 'partials/header';
+@import 'partials/footer';
 
 @import 'modules/intro';
 @import 'modules/first';
+@import 'modules/second';
