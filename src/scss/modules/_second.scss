@@ -2,13 +2,26 @@
   position: relative;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   padding-left: 10vw;
   background-color: $background__second;
   color: $color__main;
   @include large {
-      padding: 0 0 0 8vw;
-    }
+    padding: 16vw 0 0 0;
+  }
 }
+
+.second__content {
+  position: relative;
+  background-image: url(../dist/img/second__textBackground.svg);
+  display: flex;
+  flex-flow: column wrap;
+  @include large {
+    order: 2;
+    width: 30vw;
+  }
+}
+
 .second__title {
   position: relative;
   font-family: 'Maison Neue', sans-serif;
@@ -52,6 +65,12 @@
   }
 }
 
-.second__image{
+.second__image {
   width: 100%;
+  @include large {
+    width: 40vw;
+    height: auto;
+    padding-right: 0;
+    margin-top: 0;
+  }
 }
