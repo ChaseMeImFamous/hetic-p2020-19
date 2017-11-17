@@ -3,7 +3,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  padding-left: 10vw;
+  padding-left: 3vw;
+  padding-top: 24vw;
   background-color: $background__second;
   color: $color__main;
   @include large {
@@ -16,7 +17,9 @@
   background-image: url(../dist/img/second__textBackground.svg);
   display: flex;
   flex-flow: column wrap;
+  padding-right: 3vw;
   @include large {
+    padding-right: 0;
     order: 2;
     width: 30vw;
   }
@@ -67,6 +70,7 @@
 
 .second__image {
   width: 100%;
+  padding-right: 3vw;
   @include large {
     width: 40vw;
     height: auto;
