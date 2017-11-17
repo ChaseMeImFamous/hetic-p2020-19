@@ -1,7 +1,8 @@
 .first__section {
   position: relative;
-  display: flex;
+  display: inline-flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   background-color: $background__main;
   @include large {
     padding: 0 0 0 8vw;
@@ -9,12 +10,11 @@
 }
 
 .first__content{
-  flex: 1 0 40%;
-  padding-left: 8vw;
-  padding-right: 8vw;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
   @include large {
-    padding-left: 0;
-    padding-right: 13.4vw;
+    width: 30vw;
   }
 }
 
@@ -62,14 +62,14 @@
     line-height: $fs_firstText--large*1.5;
   }
 }
-
 .first__image{
   width: 100%;
   padding-right: 3vw;
   margin-top: 25vw;
   @include large {
-    width: 90%;
+    width: 50vw;
     padding-right: 0;
     margin-top: -3.1vw;
+    margin-bottom: 8vw;
   }
 }
