@@ -1,0 +1,47 @@
+.three__section {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 24vw;
+  background-color: $background__second;
+  color: $color__main;
+  overflow: hidden;
+  @include large {
+    padding: 16vw 0 0 0;
+  }
+}
+
+.three__content{
+  position: relative;
+  margin-top: 20vw;
+  margin-bottom: 20vw;
+}
+
+.three__contentTitle {
+  color: $color__threeTitle;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 4vw);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: $fs_threeTitle;
+  @include large {
+    font-size: $fs_threeTitle--large;
+  }
+  opacity: 0.05;
+  white-space: pre;
+}
+
+.three__contentImage {
+  position: absolute;
+  width: 90%;
+  @include large {
+    height: auto;
+    padding-right: 0;
+    margin-top: -3.5vw;
+    padding-bottom: 12vw;
+  }
+}
