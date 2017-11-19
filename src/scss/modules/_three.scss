@@ -14,7 +14,6 @@
 
 .three__content{
   position: relative;
-  margin-top: 20vw;
   margin-bottom: 20vw;
 }
 
@@ -24,24 +23,23 @@
   font-weight: 600;
   position: absolute;
   left: 50%;
-  top: calc(50% + 4vw);
+  top: calc(50% - 16vw);
   text-align: center;
   transform: translate(-50%, -50%);
   font-size: $fs_threeTitle;
   @include large {
     font-size: $fs_threeTitle--large;
+    top: 50%;
   }
   opacity: 0.05;
   white-space: pre;
 }
 
 .three__contentImage {
-  position: absolute;
-  width: 90%;
-  @include large {
-    height: auto;
-    padding-right: 0;
-    margin-top: -3.5vw;
-    padding-bottom: 12vw;
-  }
+  width: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
