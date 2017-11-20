@@ -1,4 +1,4 @@
-.three__section {
+.third {
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -12,13 +12,13 @@
   }
 }
 
-.three__content{
+.third__content{
   position: relative;
   margin-bottom: 20vw;
 }
 
-.three__contentTitle {
-  color: $color__threeTitle;
+.third__contentTitle {
+  color: $color__thirdTitle;
   font-family: 'Maison Neue', sans-serif;
   font-weight: 600;
   position: absolute;
@@ -26,16 +26,16 @@
   top: calc(50% - 16vw);
   text-align: center;
   transform: translate(-50%, -50%);
-  font-size: $fs_threeTitle;
+  font-size: $fs_thirdTitle;
   @include large {
-    font-size: $fs_threeTitle--large;
+    font-size: $fs_thirdTitle--large;
     top: 50%;
   }
   opacity: 0.05;
   white-space: pre;
 }
 
-.three__contentImage {
+.third__contentImage {
   width: 80%;
   position: relative;
   left: 50%;
