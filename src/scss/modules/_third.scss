@@ -1,0 +1,45 @@
+.third {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 24vw;
+  background-color: $background__second;
+  color: $color__main;
+  overflow: hidden;
+  @include large {
+    padding: 16vw 0 0 0;
+  }
+}
+
+.third__content{
+  position: relative;
+  margin-bottom: 20vw;
+}
+
+.third__contentTitle {
+  color: $color__thirdTitle;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 16vw);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: $fs_thirdTitle;
+  @include large {
+    font-size: $fs_thirdTitle--large;
+    top: 50%;
+  }
+  opacity: 0.05;
+  white-space: pre;
+}
+
+.third__contentImage {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}

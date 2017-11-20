@@ -7,7 +7,6 @@ We don't have any rights on this project. It's a school project !
 Our team is composed by Evie Bauland, Kévin Brillion, Jérémy Pichard, David Salobir, Antoine Turpin and Romain Vigneron-Sebastianis.
 
 ## Instructions
-Note : for each instruction below, you can of course also use ```npm``` instead of ```yarn```
 
 ### Setup
 Clone the project, move to the directory and run ```yarn install```
