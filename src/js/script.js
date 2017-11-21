@@ -1,6 +1,4 @@
-/* import { User } from './user';
+import { Parallax } from './parallax';
+import { User } from './user';
 
-console.log('Welcome !');
 
-let name = 'Kévin';
-const user = new User(name); */
