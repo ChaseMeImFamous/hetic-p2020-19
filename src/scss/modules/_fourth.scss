@@ -1,0 +1,82 @@
+.fourth {
+  position: relative;
+  display: inline-flex;
+  flex-flow: row wrap;
+  padding: 20vw 0 0 6vw;
+  justify-content: space-around;
+  background-color: $background__main;
+  @include large {
+    padding: 16vw 0 0 8vw;
+  }
+}
+
+.fourth__content{
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  padding-right: 6vw;
+  margin-bottom: 16vw;
+  @include large {
+    order: 2;
+    padding-right: 0;
+    width: 45vw;
+  }
+}
+
+.fourth__title {
+  position: relative;
+  color: $color__main;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 600;
+  font-size: $fs_generalTitle;
+  line-height: $fs_generalTitle*1.2;
+  margin-bottom: 4vw;
+  @include large {
+    font-size: $fs_generalTitle--large;
+    line-height: $fs_generalTitle--large*1.2;
+    padding-right: 19vw;
+    margin-bottom: 1vw;
+  }
+}
+
+.fourth__title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 65%;
+  top: -8vw;
+  background: $line__color;
+  height: 2vw;
+  border-radius: 2vw;
+  @include large {
+    right: 91%;
+    height: 0.3vw;
+    top: -1vw;
+    left: 0;
+  }
+}
+
+.fourth__text {
+  color: $color__main;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 400;
+  font-size: $fs_generalText;
+  line-height: $fs_generalText*1.5;
+  @include large {
+    padding-right: 16vw;
+    font-size: $fs_generalText--large;
+    line-height: $fs_generalText--large*1.5;
+  }
+}
+
+.fourth__image{
+  width: 95%;
+  padding-right: 3vw;
+  margin-bottom: 20vw;
+  @include large {
+    width: 45vw;
+    padding-left: 0;
+    margin-top: -3.1vw;
+    margin-bottom: 8vw;
+  }
+}

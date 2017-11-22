@@ -58,12 +58,12 @@
   color: $color__main;
   font-family: 'Maison Neue', sans-serif;
   font-weight: 400;
-  font-size: $fs_firstText;
-  line-height: $fs_firstText*1.5;
+  font-size: $fs_generalText;
+  line-height: $fs_generalText*1.5;
   @include large {
     padding-right: 14vw;
-    font-size: $fs_firstText--large;
-    line-height: $fs_firstText--large*1.5;
+    font-size: $fs_generalText--large;
+    line-height: $fs_generalText--large*1.5;
   }
 }
 
