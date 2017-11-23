@@ -41,7 +41,7 @@ window.onload = function(){
             let transY,
                 transX;
 
-            transY = (a ) / 2;
+            transY = (a - 90 ) / 2;
             transX = (b ) / 2;
 
 
