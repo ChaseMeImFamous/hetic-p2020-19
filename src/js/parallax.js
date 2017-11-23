@@ -6,7 +6,7 @@ export class Parallax {
 window.onload = function(){
     let wrapper = document.querySelector('.intro__content'),
         layerText = document.querySelector('.intro__headerTitle'),
-        layerImg = document.querySelector('.intro__contentVideo');
+        layerImg = document.querySelector('.intro__contentVideo');//a changer par le poster
 
     wrapper.addEventListener('mousemove',function(e){
         let pageX = e.clientX,
@@ -19,13 +19,15 @@ window.onload = function(){
         wrapper.style = 'background-position:'+ pageX/200 +'px center';
     });
 
-    window.addEventListener('deviceorientation', function (e) {
+    window.addEventListener('deviceorientation', function (event) {
 
-        beta = e.beta;
-        gamma = e.gamma;
-        setTimeout(function(){
-            normalizeData(gamma, beta)
-        }, 50)
+        let beta = event.beta,
+        gamma = event.gamma;
+        setTimeout(function () {
+            /*normalizeData(gamma, beta)*/
+            console.log(beta);
+            console.log(gamma);
+        }, 50);
 
         function normalizeData(_g, _b){
 
