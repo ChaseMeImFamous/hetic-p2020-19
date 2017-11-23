@@ -29,20 +29,20 @@ window.onload = function(){
             normalizeData(alpha, beta);
         }, 50);
 
-        function normalizeData(_b, _a){
+        function normalizeData(_alpha, _beta){
 
-            let b = Math.round(_b),
-                a = Math.round(_a);
+            let a = Math.round(_alpha),
+                b = Math.round(_beta);
 
-            console.log("B " + b);
             console.log("G " + a);
-            console.log("test" + DeviceOrientationEvent.beta);
+            console.log("B " + b);
+
 
             let transY,
                 transX;
 
-            transY = (a - 90 ) / 2;
-            transX = (b ) / 2;
+            transY = (a ) / 2;
+            transX = (b - 90 ) / 2;
 
 
 
