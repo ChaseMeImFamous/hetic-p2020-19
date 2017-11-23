@@ -44,6 +44,21 @@ window.onload = function(){
             transY = (a ) / 2;
             transX = (b ) / 2;
 
+
+
+            if (transY >= 15) {
+                transY = 15;
+            }
+            if (transY <= -15) {
+                transY = -15;
+            }
+            if (transX >= 25) {
+                transX = 25;
+            }
+            if (transX <= -25) {
+                transX = -25;
+            }
+
             console.log("TransY " + transY);
             console.log("TransX " + transX);
 
