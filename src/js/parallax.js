@@ -36,11 +36,12 @@ window.onload = function(){
 
             console.log("B " + b);
             console.log("G " + a);
+            console.log("test" + DeviceOrientationEvent.beta);
 
             let transY,
                 transX;
 
-            transY = (a-90 ) / 2;
+            transY = (a ) / 2;
             transX = (b ) / 2;
 
             console.log("TransY " + transY);
