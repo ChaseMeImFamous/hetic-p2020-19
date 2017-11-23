@@ -22,24 +22,24 @@ window.onload = function(){
     window.addEventListener('deviceorientation', function (event) {
 
         let beta = event.beta,
-            alpha = event.alpha;
+            gamma = event.gamma;
         setTimeout(function () {
             console.log("beta " + beta);
-            console.log("gamma " + alpha);
-            normalizeData(alpha, beta);
+            console.log("gamma " + gamma);
+            normalizeData(gamma, beta);
         }, 50);
 
-        function normalizeData(_alpha, _beta){
+        function normalizeData(_gamma, _beta){
 
-            let a = Math.round(_alpha),
+            let a = Math.round(_gamme),
                 b = Math.round(_beta);
 
             console.log("G " + a);
             console.log("B " + b);
 
-
             let transY,
                 transX;
+
 
             transY = (a ) / 2;
             transX = (b - 90 ) / 2;
