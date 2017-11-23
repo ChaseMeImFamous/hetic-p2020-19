@@ -17,4 +17,32 @@ window.onload = function(){
         layerImg.style.transform = 'translateX(' + pageX/150 + '%) translateY(' + pageY/250 + '%)';
         wrapper.style = 'background-position:'+ pageX/200 +'px center';
     });
-}
+
+    window.addEventListener('deviceorientation', function (e) {
+
+        beta = e.beta;
+        gamma = e.gamma;
+        setTimeout(function(){
+            normalizeData(gamma, beta)
+        }, 50)
+
+        function normalizeData(_g, _b){
+
+            b = Math.round(_b);
+            g = Math.round(_g);
+
+            transY += (g - transY) / 5;
+            transX += (b - transX) / 5;
+
+            layerText.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
+            layerText.style.transform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
+            layerImg.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
+            layerImg.style.transform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
+        }
+    });
+
+
+    })
+
+
+};
