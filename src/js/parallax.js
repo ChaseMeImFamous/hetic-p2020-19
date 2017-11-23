@@ -31,7 +31,7 @@ window.onload = function(){
 
         function normalizeData(_gamma, _beta){
 
-            let a = Math.round(_gamme),
+            let a = Math.round(_gamma),
                 b = Math.round(_beta);
 
             console.log("G " + a);
