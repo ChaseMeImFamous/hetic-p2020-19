@@ -16,11 +16,12 @@
   position: relative;
   display: flex;
   flex-flow: column wrap;
-  padding-right: 6vw;
+  background: url(/img/second__textBackground.svg) no-repeat center top;
+  background-size: contain;
   @include large {
     margin: -8vw auto 0 auto;
     padding: 10vw 6vw 0 7vw;
-    background: url(/img/second__textBackground.svg) no-repeat center top;
+    background: url(/img/second__textBackground--large.svg) no-repeat center top;
     background-size: contain;
     order: 2;
     width: 40vw;
@@ -28,16 +29,19 @@
 }
 
 .second__content:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4vw;
+  background: url(/img/second__textBackgroundShape.svg) no-repeat center top;
+  height: 100%;
   @include large {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 4vw;
     margin: -4vw auto 0 auto;
     padding: 4vw 0 26vw 0;
-    background: url(/img/second__textBackgroundShape.svg) no-repeat center top;
+    background: url(/img/second__textBackgroundShape--large.svg) no-repeat center top;
     background-size: cover;
     width: 100%;
+    height:auto;
   }
 }
 
@@ -77,11 +81,13 @@
   z-index: 10;
   font-family: 'Maison Neue', sans-serif;
   font-weight: 400;
-  font-size: $fs_firstText;
-  line-height: $fs_firstText*1.5;
+  font-size: $fs_generalText;
+  line-height: $fs_generalText*1.5;
+  padding-bottom: 8vw;
   @include large {
-    font-size: $fs_firstText--large;
-    line-height: $fs_firstText--large*1.5;
+    padding-bottom: 0;
+    font-size: $fs_generalText--large;
+    line-height: $fs_generalText--large*1.5;
   }
 }
 

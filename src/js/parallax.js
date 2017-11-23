@@ -11,10 +11,11 @@ window.onload = function(){
     wrapper.addEventListener('mousemove',function(e){
         let pageX = e.clientX,
             pageY = e.clientY;
-        layerText.style.webkitTransform = 'translateX(' + pageX/-20 + '%) translateY(' + pageY/-5 + 'px)';
-        layerText.style.transform = 'translateX(' + pageX/-20 + '%) translateY(' + pageY/-5 + 'px)';
-        layerImg.style.webkitTransform = 'translateX(' + pageX/150 + '%) translateY(' + pageY/250 + '%)';
-        layerImg.style.transform = 'translateX(' + pageX/150 + '%) translateY(' + pageY/250 + '%)';
+
+        layerText.style.webkitTransform = 'translateX(' + pageX/-17 + '%) translateY(' + pageY/-50 + '%)';
+        layerText.style.transform = 'translateX(' + pageX/-17 + '%) translateY(' + pageY/-50 + '%)';
+        layerImg.style.webkitTransform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
+        layerImg.style.transform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         wrapper.style = 'background-position:'+ pageX/200 +'px center';
     });
 
@@ -40,9 +41,6 @@ window.onload = function(){
             layerImg.style.transform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
         }
     });
-
-
-    })
 
 
 };
