@@ -17,15 +17,14 @@
   font-size: $fs_introTitle2;
   @include large {
     font-size: $fs_introTitle2--large;
-    top: 12vw;
   }
   position: absolute;
-  left: 50%;
-  top: 19vw;
+  left: 12.5vw;
+  top: 10vw;
   text-align: center;
-  transform: translate(-50%, -50%);
   white-space: pre;
 }
+
 /* INTRO CONTENT */
 .intro__content {
   position: relative;

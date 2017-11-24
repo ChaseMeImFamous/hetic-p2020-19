@@ -18,6 +18,8 @@
   flex-flow: column wrap;
   background: url(/img/second__textBackground.svg) no-repeat center top;
   background-size: contain;
+  margin: -16vw 20vw 20vw 0;
+  padding: 10vw 0 0 0;
   @include large {
     margin: -8vw auto 0 auto;
     padding: 10vw 6vw 0 7vw;
@@ -33,8 +35,9 @@
   position: absolute;
   left: 0;
   top: 4vw;
+  margin: -30vw auto 0 auto;
+  padding: 4vw 0 52vw 0;
   background: url(/img/second__textBackgroundShape.svg) no-repeat center top;
-  height: 100%;
   @include large {
     margin: -4vw auto 0 auto;
     padding: 4vw 0 26vw 0;

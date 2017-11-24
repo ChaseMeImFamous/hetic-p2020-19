@@ -10,11 +10,70 @@ window.onload = function(){
 
     wrapper.addEventListener('mousemove',function(e){
         let pageX = e.clientX,
-            pageY = e.clientY;
-        layerText.style.webkitTransform = 'translateX(' + pageX/-17 + '%) translateY(' + pageY/-50 + '%)';
-        layerText.style.transform = 'translateX(' + pageX/-17 + '%) translateY(' + pageY/-50 + '%)';
+            pageY = e.clientY,
+            transX = pageX/-25,
+            transY = pageY/-5;
+
+            if (transX >= -10) {
+                transX = -10;
+            }
+            if (transX <= -90) {
+                transX = -90;
+            }
+
+        layerText.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
+        layerText.style.transform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
         layerImg.style.webkitTransform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         layerImg.style.transform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         wrapper.style = 'background-position:'+ pageX/200 +'px center';
     });
-}
+
+    window.addEventListener('deviceorientation', function (event) {
+
+        let beta = event.beta,
+            gamma = event.gamma;
+        setTimeout(function () {
+            console.log("beta " + beta);
+            console.log("gamma " + gamma);
+            normalizeData(gamma, beta);
+        }, 50);
+
+        function normalizeData(_gamma, _beta){
+
+            let a = Math.round(_gamma),
+                b = Math.round(_beta);
+
+            console.log("G " + a);
+            console.log("B " + b);
+
+            let transY,
+                transX;
+
+            transX = (a ) / 2;
+            transY = (b - 90 ) / 2;
+
+            if (transY >= 0) {
+                transY = 0;
+            }
+            if (transY <= -10) {
+                transY = -10;
+            }
+            if (transX >= 25) {
+                transX = 25;
+            }
+            if (transX <= -25) {
+                transX = -25;
+            }
+
+            console.log("TransY " + transY);
+            console.log("TransX " + transX);
+
+            layerText.style.webkitTransform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
+            layerText.style.transform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
+            layerImg.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
+            layerImg.style.transform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
+        }
+    });
+
+
+};
