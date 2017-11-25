@@ -14,8 +14,8 @@ window.onload = function(){
             transX = pageX/-25,
             transY = pageY/-5;
 
-            if (transX >= -10) {
-                transX = -10;
+            if (transX >= -15) {
+                transX = -15;
             }
             if (transX <= -90) {
                 transX = -90;

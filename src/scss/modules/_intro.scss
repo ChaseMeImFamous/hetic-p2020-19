@@ -17,6 +17,8 @@
   font-size: $fs_introTitle2;
   @include large {
     font-size: $fs_introTitle2--large;
+    left: 50%;
+    top: 20%;
   }
   position: absolute;
   left: 12.5vw;
@@ -54,6 +56,7 @@
 }
 
 .intro__contentVideo {
+  background-image: url(img/third__leicaM10.png);
   z-index: 10;
   width: 70vw;
   height: auto;
@@ -125,6 +128,7 @@
     margin-right: 7vw;
   }
   display: inline-block;
+  cursor: pointer;
 }
 
 .intro__footerCenterTextBlack > div:nth-of-type(1) {
@@ -150,6 +154,7 @@
   display: inline-block;
   color: $color__main;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .intro__footerRightText {
