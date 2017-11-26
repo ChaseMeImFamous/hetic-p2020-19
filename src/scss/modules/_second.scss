@@ -1,4 +1,5 @@
 .second {
+  overflow-x: hidden;
   position: relative;
   display: flex;
   flex-flow: row wrap;
@@ -8,7 +9,7 @@
   background-color: $background__second;
   color: $color__main;
   @include large {
-    padding: 16vw 0 0 0;
+    padding: 24vw 0 0 0;
   }
 }
 

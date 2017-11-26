@@ -1,0 +1,62 @@
+.seventh {
+  position: relative;
+  display: inline-flex;
+  flex-flow: row wrap;
+  padding-top: 24vw;
+  padding-left: 6vw;
+  justify-content: space-around;
+  background-color: $background__second;
+  @include large {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-top: 24vw;
+  }
+}
+
+.seventh__content{
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  padding-right: 9vw;
+  @include large {
+    padding-right: 0;
+    align-content: center;
+    justify-content: center;
+    width: 45vw;
+  }
+}
+
+.seventh__title {
+  position: relative;
+  color: $color__second;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 600;
+  font-size: $fs_generalTitle;
+  line-height: $fs_generalTitle*1.2;
+  margin-bottom: 4vw;
+  @include large {
+    font-size: $fs_generalTitle--large;
+    line-height: $fs_generalTitle--large*1.2;
+    margin-bottom: 1vw;
+  }
+}
+
+.seventh__title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 65%;
+  top: -8vw;
+  background: $line__color;
+  height: 2vw;
+  border-radius: 2vw;
+  @include large {
+    right: 91%;
+    height: 0.3vw;
+    top: -1vw;
+    left: 0;
+  }
+}

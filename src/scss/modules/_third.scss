@@ -56,7 +56,7 @@
 
 .third__contentImageParts > img {
   position: relative;
-  transition: margin 2s ease-in-out;
+  transition: margin 4s ease-in-out;
 }
 
 .third__contentImageParts > img:nth-child(1) {
@@ -110,7 +110,7 @@
 
 .third__contentImageParts.down > img:nth-child(1) {
   margin: 0;
-  margin-bottom: -23vh;
+  margin-bottom: -19vh;
   z-index: 10 !important;
 	max-height: 20vh;
   width: auto;
@@ -118,8 +118,8 @@
 
 .third__contentImageParts.down > img:nth-child(2) {
   margin: 0;
-  margin-right: -14.5vh;
-  margin-bottom: -17.5vh;
+  margin-right: -11.5vh;
+  margin-bottom: -14.5vh;
   z-index: 9 !important;
 	max-height: 20vh;
   width: auto;
@@ -127,8 +127,8 @@
 
 .third__contentImageParts.down > img:nth-child(3) {
   margin: 0;
-  margin-right: -12vh;
-  margin-bottom: -15vh;
+  margin-right: -9vh;
+  margin-bottom: -13vh;
   z-index: 8 !important;
 	max-height: 30vh;
   width: auto;
