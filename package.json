@@ -28,7 +28,8 @@
     "tiny-slider": "^2.3.6",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
-    "vivus": "^0.4.3"
+    "vivus": "^0.4.3",
+    "waypoint": "^0.2.8"
   },
   "dependencies": {
     "gulp-if": "^2.0.2"

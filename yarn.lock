@@ -5699,6 +5699,10 @@ ware@^1.2.0:
   dependencies:
     wrap-fn "^0.1.0"
 
+waypoint@^0.2.8:
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/waypoint/-/waypoint-0.2.8.tgz#376937e1a31d96b6c4358a1ddd2aec0a27269612"
+
 weinre@^2.0.0-pre-I0Z7U9OV:
   version "2.0.0-pre-I0Z7U9OV"
   resolved "https://registry.yarnpkg.com/weinre/-/weinre-2.0.0-pre-I0Z7U9OV.tgz#fef8aa223921f7b40bbbbd4c3ed4302f6fd0a813"
