@@ -1,0 +1,52 @@
+.sixth {
+  position: relative;
+  padding-top: 12vw;
+  background-color: $background__main;
+  @include large {
+    padding: 0;
+  }
+}
+
+.sixth__leicaPreview {
+  position: relative;
+}
+
+.sixth__leica {
+  position: absolute;
+  width: 50vw;
+  top: -50vw;
+  left: 50vw;
+}
+
+.sixth__slider {
+  width: 80%;
+}
+
+.sixth__image {
+  width: 100%;
+}
+
+.sixth__controls {
+  position: relative;
+}
+
+.sixth__thumbnails {
+  position: absolute;
+  display: flex;
+  flex-flow: column wrap;
+  @include large{
+    flex-flow: row wrap;
+  }
+  bottom: 0;
+}
+
+.sixth__thumbnail {
+  width: 16vw;
+  height: auto;
+  border: 6px solid $color__second;
+  @include large {
+    width: 12vw;
+    height: auto;
+    border: 1vw solid $color__second;
+  }
+}

@@ -1,9 +1,9 @@
 {
   "name": "gulp-test",
   "version": "1.0.0",
-  "description": "Gulp test",
+  "description": "Gulp Leica M10",
   "main": "index.js",
-  "author": "bcalou",
+  "author": "kevinbrillion",
   "license": "MIT",
   "scripts": {
     "dev": "gulp",
