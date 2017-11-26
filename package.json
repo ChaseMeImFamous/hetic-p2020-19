@@ -1,9 +1,9 @@
 {
   "name": "gulp-test",
   "version": "1.0.0",
-  "description": "Gulp test",
+  "description": "Gulp Leica M10",
   "main": "index.js",
-  "author": "bcalou",
+  "author": "kevin.brillion",
   "license": "MIT",
   "scripts": {
     "dev": "gulp",
@@ -25,8 +25,10 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uglify": "^3.0.0",
+    "tiny-slider": "^2.3.6",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "vivus": "^0.4.3"
   },
   "dependencies": {
     "gulp-if": "^2.0.2"

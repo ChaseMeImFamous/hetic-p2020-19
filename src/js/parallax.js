@@ -7,7 +7,6 @@ window.onload = function(){
     let wrapper = document.querySelector('.intro__content'),
         layerText = document.querySelector('.intro__headerTitle'),
         layerImg = document.querySelector('.intro__contentVideo');
-
     wrapper.addEventListener('mousemove',function(e){
         let pageX = e.clientX,
             pageY = e.clientY,
@@ -33,8 +32,6 @@ window.onload = function(){
         let beta = event.beta,
             gamma = event.gamma;
         setTimeout(function () {
-            console.log("beta " + beta);
-            console.log("gamma " + gamma);
             normalizeData(gamma, beta);
         }, 50);
 
@@ -42,9 +39,6 @@ window.onload = function(){
 
             let a = Math.round(_gamma),
                 b = Math.round(_beta);
-
-            console.log("G " + a);
-            console.log("B " + b);
 
             let transY,
                 transX;
@@ -64,9 +58,6 @@ window.onload = function(){
             if (transX <= -25) {
                 transX = -25;
             }
-
-            console.log("TransY " + transY);
-            console.log("TransX " + transX);
 
             layerText.style.webkitTransform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
             layerText.style.transform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';

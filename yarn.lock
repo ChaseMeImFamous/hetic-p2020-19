@@ -5373,6 +5373,10 @@ timers-ext@^0.1.2:
     es5-ext "~0.10.14"
     next-tick "1"
 
+tiny-slider@^2.3.6:
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/tiny-slider/-/tiny-slider-2.3.6.tgz#270d0a45a3be4104bd55dea725e7ae89262a36ad"
+
 to-absolute-glob@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/to-absolute-glob/-/to-absolute-glob-0.1.1.tgz#1cdfa472a9ef50c239ee66999b662ca0eb39937f"
@@ -5674,6 +5678,10 @@ vinyl@^2.0.0:
     cloneable-readable "^1.0.0"
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
+
+vivus@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/vivus/-/vivus-0.4.3.tgz#d7cd1b8b9053756b21cdc5731f2308510c5f0557"
 
 vm-browserify@~0.0.1:
   version "0.0.4"
