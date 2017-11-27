@@ -23,8 +23,6 @@ window.onload = function(){
 
         layerText.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
         layerText.style.transform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
-        layerText2.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
-        layerText2.style.transform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
         layerImg.style.webkitTransform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         layerImg.style.transform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         wrapper.style = 'background-position:'+ pageX/200 +'px center';
@@ -64,8 +62,6 @@ window.onload = function(){
 
             layerText.style.webkitTransform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
             layerText.style.transform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
-            layerText2.style.webkitTransform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
-            layerText2.style.transform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
             layerImg.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
             layerImg.style.transform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
         }
