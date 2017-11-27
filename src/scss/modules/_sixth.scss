@@ -20,10 +20,13 @@
 
 .sixth__slider {
   width: 80%;
+  overflow: hidden;
 }
 
 .sixth__image {
   width: 100%;
+  height: auto;
+  margin-top: -20vw;
 }
 
 .sixth__controls {
@@ -33,7 +36,7 @@
 .sixth__thumbnails {
   position: absolute;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   @include large{
     flex-flow: row wrap;
   }

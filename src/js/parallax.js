@@ -1,8 +1,3 @@
-export class Parallax {
-  constructor() {
-  }
-}
-
 window.onload = function(){
     let wrapper = document.querySelector('.intro__content'),
         layerText = document.querySelector('.intro__headerTitle'),

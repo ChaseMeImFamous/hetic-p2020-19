@@ -1,18 +1,18 @@
 .seventh {
   position: relative;
-  display: inline-flex;
-  flex-flow: row wrap;
+  display: flex;
+  flex-flow: column wrap;
   padding-top: 24vw;
-  padding-left: 6vw;
   justify-content: space-around;
   background-color: $background__second;
+  overflow: hidden;
   @include large {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
     padding: 0;
-    padding-top: 24vw;
+    padding-top: 12vw;
   }
 }
 
@@ -20,6 +20,7 @@
   position: relative;
   display: flex;
   flex-flow: column wrap;
+  padding-left: 6vw;
   padding-right: 9vw;
   @include large {
     padding-right: 0;
@@ -54,9 +55,28 @@
   height: 2vw;
   border-radius: 2vw;
   @include large {
-    right: 91%;
-    height: 0.3vw;
-    top: -1vw;
+    right: 85%;
+    height: 0.4vw;
+    top: -1.1vw;
     left: 0;
   }
+}
+
+.seventh__slider {
+}
+
+.seventh__slide {
+  width: 45vw;
+}
+
+.seventh__image {
+  width: 100%;
+}
+
+.seventh__slideTitle {
+  text-align: center;
+}
+
+.seventh__slideText {
+  text-align: center;
 }
