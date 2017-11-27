@@ -1,6 +1,5 @@
 import 'waypoints/lib/noframework.waypoints.min';
-import vivus from 'vivus';
-import tns from 'tiny-slider';
+import Vivus from 'vivus';
 
 const SVGAnimation = new Vivus('svg--animated', {
   type: 'oneByOne',
@@ -40,7 +39,7 @@ const seventh__slider = tns({
   nav: false,
   edgePadding: 50,
   responsive: {
-    1040: {
+    768: {
       edgePadding: 400
     }
   }
