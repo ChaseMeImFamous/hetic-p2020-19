@@ -1,4 +1,4 @@
-window.addEventListener('load', function(){
+window.onload = function(){
     let wrapper = document.querySelector('.intro__content'),
         layerText = document.querySelector('.intro__headerTitle'),
         layerText2 = document.querySelector('.intro__contentTitle'),
@@ -21,7 +21,7 @@ window.addEventListener('load', function(){
         layerImg.style.webkitTransform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         layerImg.style.transform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         wrapper.style = 'background-position:'+ pageX/200 +'px center';
-    }));
+    });
 
     window.addEventListener('deviceorientation', function (e) {
 
@@ -29,7 +29,7 @@ window.addEventListener('load', function(){
             gamma = e.gamma;
         setTimeout(function () {
             normalizeData(gamma, beta);
-        }, 50);
+        }, 100);
 
         function normalizeData(_gamma, _beta){
 
