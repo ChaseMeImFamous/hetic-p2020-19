@@ -1,23 +1,15 @@
 window.onload = function(){
     let wrapper = document.querySelector('.intro__content'),
         layerText = document.querySelector('.intro__headerTitle'),
-        layerText2 = document.querySelector('.intro__contentTitle'),
-        layerImg = document.querySelector('.intro__contentVideo');
+        layerImg = document.querySelector('.intro__contentPoster');
     wrapper.addEventListener('mousemove',function(e){
         let pageX = e.clientX,
             pageY = e.clientY,
-            transX = pageX/-25,
-            transY = pageY/-5;
+            transX = pageX/-30,
+            transY = pageY/-20;
 
-            if (transX >= -15) {
-                transX = -15;
-            }
-            if (transX <= -90) {
-                transX = -90;
-            }
-
-        layerText.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
-        layerText.style.transform = 'translateX(' + transX + '%) translateY(' + transY + 'px)';
+        layerText.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
+        layerText.style.transform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
         layerImg.style.webkitTransform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         layerImg.style.transform = 'translateX(' + pageX/250 + '%) translateY(' + pageY/350 + '%)';
         wrapper.style = 'background-position:'+ pageX/200 +'px center';
@@ -55,8 +47,8 @@ window.onload = function(){
                 transX = -25;
             }
 
-            layerText.style.webkitTransform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
-            layerText.style.transform = 'translateX(' + -transX + '%) translateY(' + -transY + 'px)';
+            layerText.style.webkitTransform = 'translateX(' + -transX + '%) translateY(' + -transY + '%)';
+            layerText.style.transform = 'translateX(' + -transX + '%) translateY(' + -transY + '%)';
             layerImg.style.webkitTransform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
             layerImg.style.transform = 'translateX(' + transX + '%) translateY(' + transY + '%)';
         }

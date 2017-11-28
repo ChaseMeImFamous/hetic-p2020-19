@@ -15,6 +15,17 @@ const second = new Waypoint({
   offset: '60%'
 })
 
+const sixth = new Waypoint({
+  element: document.querySelector('#sixth__waypoints'),
+  handler: function(direction) {
+    for (var i = 0; i < this.element.childNodes.length; i++)
+    {
+        this.element.childNodes[i].classList.add('down', direction === 'down')
+    }
+  },
+  offset: '100%'
+})
+
 const third = new Waypoint({
   element: document.querySelector('#third__waypoints'),
   handler: function(direction) {

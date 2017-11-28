@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    padding-top: 12vw;
+    padding-top: 24vw;
   }
 }
 
@@ -66,11 +66,15 @@
 }
 
 .seventh__slide {
-  width: 45vw;
 }
 
 .seventh__image {
   width: 100%;
+  @include large {
+    width: 50%;
+    position: relative;
+    left: 25%;
+  }
 }
 
 .seventh__slideTitle {
@@ -79,4 +83,8 @@
 
 .seventh__slideText {
   text-align: center;
+}
+
+.seventh__content > .tns-outer {
+  height: 40vh;
 }
