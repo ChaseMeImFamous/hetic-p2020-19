@@ -61,10 +61,5 @@ const seventh__slider = tns({
   mouseDrag: true,
   controls: false,
   nav: false,
-  edgePadding: 20,
-  responsive: {
-    768: {
-      edgePadding: 800
-    }
-  }
+  edgePadding: 50
 });

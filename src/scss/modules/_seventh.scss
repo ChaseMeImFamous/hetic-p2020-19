@@ -3,10 +3,12 @@
   display: flex;
   flex-flow: column wrap;
   padding-top: 24vw;
+  margin-bottom: -170vh;
   justify-content: space-around;
   background-color: $background__second;
   overflow: hidden;
   @include large {
+    margin: 0;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -60,12 +62,6 @@
     top: -1.1vw;
     left: 0;
   }
-}
-
-.seventh__slider {
-}
-
-.seventh__slide {
 }
 
 .seventh__image {

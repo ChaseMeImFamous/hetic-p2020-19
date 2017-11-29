@@ -45,11 +45,11 @@ yarn run build
 That will generate productions files in the ```/dist``` folder, which you can then serve for production.
 
 ## Credits
-- Kévin Brillion - Web developer
-- Antoine Turpin - Web developer
-- Evie Bauland - UX/UI Designer
-- David Salobir - UX/UI Designer
-- Jérémy Pichard - Content editor
-- Romain Vigneron - Content editor
+- [Kévin Brillion](https://github.com/kevinbrillion) - Web developer
+- [Antoine Turpin](https://github.com/TurpinAntoine) - Web developer
+- [Evie Bauland](https://dribbble.com/EvieBauland) - UX/UI Designer
+- [David Salobir](https://dribbble.com/davidsalobir) - UX/UI Designer
+- [Romain Vigneron](https://github.com/RomainVS) - Content editor / Video editor
+- [Jérémy Pichard](https://github.com/Jeremyjeyr) - Content editor
 
 A special thanks to Bastien Calou and Johann Pinson for their generous help !
