@@ -6,14 +6,16 @@
   flex-flow: row wrap;
   justify-content: space-around;
   padding-left: 6vw;
-  padding-top: 64vw;
-  margin-top: -48vw;
+  padding-top: 70vw;
+  margin-top: -30vw;
   background-color: $background__second;
   color: $color__main;
   @include large {
-    z-index:auto;
+    z-index:-1;
     margin: 0 auto;
     padding: 24vw 0 0 0;
+    padding-top: 40vw;
+    margin-top: -35vw;
   }
 }
 
@@ -27,6 +29,7 @@
   padding: 25vw 0 10vw 0;
   @include large {
     margin: -8vw auto 0 auto;
+    margin-left: -6vw;
     padding: 10vw 6vw 0 7vw;
     background: url(/img/second__textBackground--large.svg) no-repeat center top;
     background-size: contain;
@@ -82,7 +85,7 @@
   height: 2vw;
   border-radius: 2vw;
   @include large {
-    right: 78%;
+    right: 85%;
     height: 0.3vw;
     top: -1vw;
     left: 0;
@@ -110,12 +113,12 @@
   margin-left: -6vw;
   padding-right: 6vw;
   @include large {
-    width: 55vw;
+    overflow: hidden;
+    width: 60vw;
     height: auto;
     padding: 0;
     margin: 0;
-    margin-top: -12vw;
+    margin-top: -14vw;
     margin-left: -6vw;
-    padding-bottom: 12vw;
   }
 }

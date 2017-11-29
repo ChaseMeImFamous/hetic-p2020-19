@@ -71,20 +71,66 @@
 .seventh__image {
   width: 100%;
   @include large {
-    width: 50%;
+    width: 40%;
     position: relative;
-    left: 25%;
+    left: 30%;
   }
 }
 
 .seventh__slideTitle {
-  text-align: center;
+  color: $color__second;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 600;
+  font-size: $fs_generalTitle;
+  line-height: $fs_generalTitle*1.2;
+  position: relative;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 4vw;
+  margin-top: 20vw;
+  width: 80%;
+  @include large {
+    font-size: $fs_generalTitle--large;
+    line-height: $fs_generalTitle--large*1.2;
+    width: 25%;
+    left: 50%;
+    margin-bottom: 1vw;
+    margin-top: 4vw;
+  }
+}
+
+.seventh__slideTitle:before {
+  content: '';
+  position: absolute;
+  left: -15%;
+  right: 105%;
+  top: 2vw;
+  background: $line__color;
+  height: 2vw;
+  border-radius: 2vw;
+  @include large {
+    left: -20%;
+    right: 110%;
+    height: 0.4vw;
+    top: 1vw;
+  }
 }
 
 .seventh__slideText {
-  text-align: center;
-}
-
-.seventh__content > .tns-outer {
-  height: 40vh;
+  color: $color__second;
+  font-family: 'Maison Neue', sans-serif;
+  font-weight: 400;
+  font-size: $fs_generalText;
+  line-height: $fs_generalText*1.5;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  @include large {
+    width: 25%;
+    font-size: $fs_generalText--large;
+    line-height: $fs_generalText--large*1.5;
+  }
 }

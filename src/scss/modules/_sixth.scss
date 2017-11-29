@@ -25,7 +25,7 @@
     width: 100vw;
     top: -50vw;
     left: 130vw;
-    transition: left 3s;
+    transition: left 1s;
   }
 }
 
@@ -37,33 +37,6 @@
     width: 100vw;
     top: -50vw;
     left: 65vw;
-  }
-}
-
-.sixth__leicaCurrentSlide {
-  display:none;
-  @include large {
-    z-index: 5;
-    display: block;
-    position: absolute;
-    width: 10vw;
-    height: auto;
-    top: -35.5vw;
-    left: 148vw;
-    transition: left 3s;
-  }
-}
-
-.sixth__leicaCurrentSlide.down {
-  display:none;
-  @include large {
-    z-index: 5;
-    display: block;
-    position: absolute;
-    width: 10vw;
-    height: auto;
-    top: -35.5vw;
-    left: 83vw;
   }
 }
 

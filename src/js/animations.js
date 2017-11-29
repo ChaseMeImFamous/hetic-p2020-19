@@ -23,16 +23,29 @@ const sixth = new Waypoint({
         this.element.childNodes[i].classList.add('down', direction === 'down')
     }
   },
-  offset: '100%'
+  offset: '150%'
 })
 
 const third = new Waypoint({
   element: document.querySelector('#third__waypoints'),
   handler: function(direction) {
-    this.element.classList.add('down', direction === 'down')
+    this.element.classList.toggle('down', direction === 'down')
   },
   offset: '60%'
 })
+
+const fourth__slider = tns({
+  container: '.fourth__slider',
+  items: 1,
+  mode: 'gallery',
+  speed: 400,
+  nav: false,
+  controls: false,
+  autoplay: true,
+  autoplayTimeOut: 3000,
+  autoplayButtonOutput: false,
+  loop: true
+});
 
 const sixth__slider = tns({
   container: '.sixth__slider',
@@ -48,10 +61,10 @@ const seventh__slider = tns({
   mouseDrag: true,
   controls: false,
   nav: false,
-  edgePadding: 50,
+  edgePadding: 20,
   responsive: {
     768: {
-      edgePadding: 400
+      edgePadding: 800
     }
   }
 });

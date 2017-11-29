@@ -1,0 +1,12 @@
+<svg width="5760" height="944" viewBox="0 0 5760 944" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>transition__bottomShadow</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(4 0 0 4 -17932 1832)">
+<g id="transition__bottomShadow">
+<use xlink:href="#path0_fill" transform="translate(4483 -458)" fill="#4D4A4A"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 182.012C 0 182.012 113.679 72.7501 238.693 65.9342C 363.707 59.1182 405.187 97.1465 679.099 96.9328C 833.958 96.812 970.657 -6.0606 1200.47 0.281648C 1336.93 4.04783 1440 78.4474 1440 78.4474L 1440 231C 1440 231 1297.94 240.604 1048.24 231C 791.823 221.137 687.957 231 409.332 231C 191.302 231 0 231 0 231L 0 182.012Z"/>
+</defs>
+</svg>

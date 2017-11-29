@@ -5,11 +5,11 @@
 @import 'abstracts/fonts';
 @import 'abstracts/medias';
 @import 'abstracts/mixins';
-@import 'abstracts/animations';
 
 @import 'partials/header';
 @import 'partials/footer';
 
+@import 'modules/video';
 @import 'modules/intro';
 @import 'modules/first';
 @import 'modules/second';

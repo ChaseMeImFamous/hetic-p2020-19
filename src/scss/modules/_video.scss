@@ -1,0 +1,34 @@
+.video {
+  display: none;
+  background: $background__main;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.video__content{
+  position: relative;
+  left: 50%;
+  top: calc(50% - 6vh);
+  text-align: center;
+  transform: translate(-50%, -50%);
+  @include large {
+    top: calc(50% + 3vh);
+  }
+}
+
+.video__contentVideo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: auto;
+  @include large {
+    width: 49vw;
+  }
+}
